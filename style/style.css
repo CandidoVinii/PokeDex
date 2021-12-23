@@ -1,0 +1,153 @@
+body {
+	background: #EFEFBB;
+	background: linear-gradient(to right, rgba(255, 0, 0, 0.51), rgba(201, 179, 180, 0.41));
+	color: white;
+	margin: 0;
+	font-family: rubik;
+}
+
+.container {
+	padding: 40px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 54px;
+}
+
+.pokedex {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 0.8fr));
+	grid-gap: 25px;
+	padding-inline-start: 0;
+}
+
+.card {
+	list-style: none;
+	padding: 40px;
+	color: #222;
+	text-align: center;
+	border-radius: 20px;
+	position: relative;
+}
+
+.card::after {
+	content: "";
+  display: block;
+  width: 50%;
+  height: 45%;
+  border-radius: 100%;
+  background-color: #fff;
+  opacity: .7;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
+
+.steel {
+	background-color: #f4f4f4;
+}
+
+.fire {
+	background-color: #f08030;
+}
+
+.grass {
+	background-color: #78c850;
+}
+
+.electric {
+	background-color: #f8d030;
+}
+
+.water {
+	background-color: #6890f0;
+}
+
+.ice{
+    background-color: #98d8d8;
+}
+
+.ground {
+	background-color: #e0c068;
+}
+
+.rock {
+	background-color: #b8a038;
+}
+
+.fairy {
+	background-color: #ee99ac;
+}
+
+.poison {
+	background-color: #a040a0;
+}
+
+.bug {
+	background-color: #a8b820;
+}
+
+.dragon {
+	background-color: #7038f8;
+}
+
+.psychic {
+	background-color: #f85888;
+}
+
+.flying {
+	background-color: #F5F5F5;
+}
+
+.fighting {
+	background-color: #c03028;
+}
+
+.normal {
+	background-color: #a8a878;
+}
+
+.card:hover {
+	animation: bounce 0.5s linear;
+}
+
+.card-title {
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	font-size: 32px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+}
+
+.card-subtitle {
+	margin-top: 5px;
+	color: #666;
+	font-weight: lighter;
+	position: relative;
+	z-index: 2;
+}
+
+.card-image {
+	height: 180px;
+	position: relative;
+	z-index: 2;
+}
+
+@keyframes bounce {
+	20% {
+			transform: translateY(-6px);
+	}
+	40% {
+			transform: translateY(0px);
+	}
+
+	80% {
+			transform: translateY(-2px);
+	}
+	100% {
+			transform: translateY(0);
+	}
+}
